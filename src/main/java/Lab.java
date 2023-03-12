@@ -21,7 +21,7 @@ public class Lab {
      * @return a newly instantiated Deque. Deques implement both stack and queue behavior.
      */
     public Deque<String> createNewStack(){
-        Deque<String> deque = new ArrayDeque<>();
+        Deque<String> deque = new ArrayDeque<String>();
         return deque;
     }
 
@@ -40,7 +40,7 @@ public class Lab {
      * @param item a String to be added to the deque.
      */
     public void addToTopOfStack(Deque<String> stack, String item){
-        stack.add(item);
+        stack.push(item);
     }
 
     /**
@@ -51,7 +51,7 @@ public class Lab {
      */
     public String removeFromTopOfStack(Deque<String> stack){
         
-        return stack.remove();
+        return stack.pop();
     }
     /**
      * Peek the value at the top of a deque.
